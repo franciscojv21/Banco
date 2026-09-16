@@ -16,5 +16,12 @@ public class Banco {
         conta1.depositar(100);
         conta1.sacar(10);
         conta1.extratoBancario();
+        
+        System.out .println(conta1.getTitular());
+        System.out.println(conta1.getSaldo());
+        
+        conta1.setTitular("Francisco Wallyson");
+        
+        System.out.println(conta1.getTitular());
     }
 }

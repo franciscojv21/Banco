@@ -23,5 +23,16 @@ public class Banco {
         conta1.setTitular("Francisco Wallyson");
         
         System.out.println(conta1.getTitular());
+        
+        System.out.println("=============================================");
+        
+        ContaPF contapf1 = new ContaPF("7658945659","Mateus");
+        ContaPJ contapj1 = new ContaPJ("33886770019","Pedro");
+        
+        contapf1.imprimir();
+        
+        System.out.println("========================");
+        
+        contapj1.imprimir();
     }
 }

@@ -32,7 +32,7 @@ public void depositar(double valor){
     if(valor > 0){
         this.saldo = this.saldo + valor;
     }else{
-        System.out.println("Não é permitido depositar um valor negativo.");
+        System.out.println("Valor de depósito inválido.");
     }
   }
 
@@ -40,7 +40,7 @@ public void sacar(double valor){
    if(valor > 0 && valor <= this.saldo){
        this.saldo = this.saldo - valor;
    }else{
-       System.out.println("Saque não permitido.");
+       System.out.println("Saldo insuficiente.");
    }   
   }
 
@@ -49,6 +49,32 @@ public void extratoBancario(){
   }
 
 public void imprimir(){}
+
+public void verificarSaldo(){
+  if(this.saldo == 0.0){
+      System.out.println("Conta sem saldo");
+      
+  }else if(this.saldo > 0 && this.saldo<= 500 ){
+      System.out.println("Saldo baixo");
+  }else if(this.saldo > 500 && this.saldo<= 2000){
+      System.out.println("Saldo normal");
+  }else if(this.saldo > 2000){
+      System.out.println("Saldo elevado");
+ }
+
+ }
+
+public void exibirExtratoSimples() {
+ int quantidade = 0;
+for(int i = 1; i <= quantidade; i++){
+    System.out.println("Operação " + i);
+}
+}
+
+
+
+
+
 
 
 }

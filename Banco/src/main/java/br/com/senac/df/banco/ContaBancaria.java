@@ -31,6 +31,7 @@ public void setTitular(String Titular){
 public void depositar(double valor){
     if(valor > 0){
         this.saldo = this.saldo + valor;
+        System.out.println("Deposito realizado com sucesso.");
     }else{
         System.out.println("Valor de depósito inválido.");
     }
@@ -39,6 +40,7 @@ public void depositar(double valor){
 public void sacar(double valor){
    if(valor > 0 && valor <= this.saldo){
        this.saldo = this.saldo - valor;
+       System.out.println("Saque realizado com sucesso.");
    }else{
        System.out.println("Saldo insuficiente.");
    }   
@@ -58,7 +60,7 @@ public void verificarSaldo(){
       System.out.println("Saldo baixo");
   }else if(this.saldo > 500 && this.saldo<= 2000){
       System.out.println("Saldo normal");
-  }else if(this.saldo > 2000){
+  }else{
       System.out.println("Saldo elevado");
  }
 

@@ -63,10 +63,16 @@ public class Banco {
     
     switch(opcao){
      case 1:
-        contapj1.depositar(1);
+         System.out.println("Digite o valor a ser depositado ");
+         double valorDeposito = entrada.nextDouble();
+        contapj1.depositar(valorDeposito);
         break;
+        
      case 2:
-        contapj1.sacar(1);
+       System.out.println("Digite o valor a ser sacado ");
+         double valorSaque = entrada.nextDouble();
+         
+         contapj1.sacar(valorSaque);
         break;
      case 3:
          contapj1.verificarSaldo();
@@ -75,6 +81,7 @@ public class Banco {
          contapj1.extratoBancario();
          break;
      case 5:
+         System.out.println("Sistema sendo encerrado...");
          break;
          
        
